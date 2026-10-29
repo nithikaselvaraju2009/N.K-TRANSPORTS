@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N.K Transports | Premium Cabs, Outstation Travels & Live GPS Tracking</title>
+  
+  <!-- Meta tags for SEO & Social Sharing -->
+  <meta name="description" content="N.K Transports - Safe, reliable and affordable travel services. Outstation cabs, local rentals, airport transfers with real-time live car GPS tracking. Call 8438142815.">
+  <meta name="keywords" content="NK Transports, cab booking, outstation travels, live tracking, Innova Crysta rental, tempo traveller, taxi booking, 8438142815">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#070a08',
+              card: '#0f1612',
+              cardHover: '#15211b',
+              emerald: '#10b981',
+              neon: '#00ff88',
+              darkGreen: '#064e3b',
+              accent: '#34d399',
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS for Interactive Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#070a08] text-gray-100 antialiased selection:bg-[#00ff88] selection:text-black">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-[#064e3b] via-[#093526] to-[#04281e] border-b border-emerald-500/30 text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-emerald-300 font-medium">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#00ff88] animate-ping"></span>
+        <span>24/7 Outstation & City Cabs Available • Sanitized & GPS Tracked Vehicles</span>
+      </div>
+      <div class="flex items-center gap-4 text-gray-300">
+        <a href="tel:8438142815" class="flex items-center gap-1.5 hover:text-[#00ff88] transition font-semibold text-emerald-400">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+          <span>Call: +91 8438142815</span>
+        </a>
+        <span class="hidden md:inline text-emerald-800">|</span>
+        <a href="https://wa.me/918438142815?text=Hello%20NK%20Transports,%20I%20need%20to%20inquire%20about%20a%20cab" target="_blank" class="hidden md:flex items-center gap-1.5 hover:text-[#00ff88] transition text-emerald-400">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+          <span>WhatsApp Quick Booking</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Navigation -->
+  <header class="sticky top-0 z-50 bg-[#070a08]/90 backdrop-blur-md border-b border-emerald-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#00ff88] to-[#065f46] p-0.5 shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-500/40 transition">
+          <div class="w-full h-full bg-[#070a08] rounded-[10px] flex items-center justify-center">
+            <i data-lucide="shield-check" class="w-6 h-6 text-[#00ff88]"></i>
+          </div>
+        </div>
+        <div>
+          <div class="font-heading font-black text-2xl tracking-wider text-white flex items-center gap-1.5">
+            N.K <span class="text-[#00ff88] drop-shadow-[0_0_12px_rgba(0,255,136,0.6)]">TRANSPORTS</span>
+          </div>
+          <p class="text-[11px] font-semibold text-emerald-400/80 tracking-widest uppercase">Safe • Punctual • Luxury Rides</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="#hero" class="hover:text-[#00ff88] transition">Home</a>
+        <a href="#booking-section" class="hover:text-[#00ff88] transition flex items-center gap-1">
+          <span>Book Ride</span>
+          <span class="text-[10px] bg-emerald-500/20 text-[#00ff88] border border-emerald-500/40 px-1.5 py-0.2 rounded font-bold">Instant</span>
+        </a>
+        <a href="#live-tracking" class="hover:text-[#00ff88] transition flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-[#00ff88] animate-pulse"></span>
+          <span>Live Tracking</span>
+        </a>
+        <a href="#fleet" class="hover:text-[#00ff88] transition">Our Fleet</a>
+        <a href="#services" class="hover:text-[#00ff88] transition">Services</a>
+        <a href="#tour-packages" class="hover:text-[#00ff88] transition">Packages</a>
+        <a href="#contact" class="hover:text-[#00ff88] transition">Contact</a>
+      </nav>
+
+      <!-- Desktop Header CTAs -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:8438142815" class="flex items-center gap-2 bg-emerald-950/60 border border-emerald-500/40 hover:border-emerald-400 px-4 py-2.5 rounded-xl text-emerald-300 font-bold text-sm transition hover:shadow-[0_0_15px_rgba(16,185,129,0.3)]">
+          <i data-lucide="phone" class="w-4 h-4 text-[#00ff88]"></i>
+          <span>8438142815</span>
+        </a>
+        <a href="#booking-section" class="glow-btn px-5 py-2.5 rounded-xl text-sm font-extrabold flex items-center gap-2">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Book a Cab</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="lg:hidden text-gray-300 hover:text-[#00ff88] p-2">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#0a0f0d] border-b border-emerald-900/50 px-6 py-6 space-y-4">
+      <a href="#hero" class="mobile-nav-link block text-base font-semibold text-gray-200 hover:text-[#00ff88]">Home</a>
+      <a href="#booking-section" class="mobile-nav-link block text-base font-semibold text-gray-200 hover:text-[#00ff88]">Book a Ride</a>
+      <a href="#live-tracking" class="mobile-nav-link block text-base font-semibold text-[#00ff88]">Live GPS Tracking (Active)</a>
+      <a href="#fleet" class="mobile-nav-link block text-base font-semibold text-gray-200 hover:text-[#00ff88]">Our Fleet</a>
+      <a href="#services" class="mobile-nav-link block text-base font-semibold text-gray-200 hover:text-[#00ff88]">Services</a>
+      <a href="#tour-packages" class="mobile-nav-link block text-base font-semibold text-gray-200 hover:text-[#00ff88]">Tour Packages</a>
+      <a href="#contact" class="mobile-nav-link block text-base font-semibold text-gray-200 hover:text-[#00ff88]">Contact Us</a>
+      
+      <div class="pt-4 border-t border-emerald-950/80 flex flex-col gap-3">
+        <a href="tel:8438142815" class="w-full text-center bg-emerald-950 border border-emerald-500/50 text-[#00ff88] py-3 rounded-xl font-bold flex items-center justify-center gap-2">
+          <i data-lucide="phone-call" class="w-4 h-4"></i>
+          <span>Direct Call: 8438142815</span>
+        </a>
+        <a href="https://wa.me/918438142815?text=Hello%20NK%20Transports,%20I%20would%20like%20to%20book%20a%20cab" target="_blank" class="w-full text-center glow-btn py-3 rounded-xl font-bold flex items-center justify-center gap-2">
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+          <span>WhatsApp Booking</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-grid-pattern">
+    
+    <!-- Background Glow Blobs -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#00ff88]/10 blur-[130px] pointer-events-none rounded-full"></div>
+    <div class="absolute bottom-10 right-10 w-72 h-72 bg-emerald-700/10 blur-[120px] pointer-events-none rounded-full"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <!-- Live Badge -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs sm:text-sm font-semibold mb-6 shadow-lg shadow-emerald-950/50">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#00ff88] animate-pulse"></span>
+          <span>Premier Transport & Cab Service in South India</span>
+        </div>
+
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mb-6">
+          Premium Rides, Seamless Journeys with <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00ff88] via-emerald-400 to-[#10b981] drop-shadow-[0_0_25px_rgba(0,255,136,0.3)]">N.K TRANSPORTS</span>
+        </h1>
+
+        <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-8">
+          From comfortable city rides to outstation luxury journeys. Experience reliable chauffeurs, sanitized vehicles, live GPS telemetry tracking, and 24/7 dedicated support.
+        </p>
+
+        <!-- Trust Points -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+          <div class="glass-panel p-3.5 rounded-xl flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-950 border border-emerald-500/30 flex items-center justify-center text-[#00ff88]">
+              <i data-lucide="navigation" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Live GPS</div>
+              <div class="text-xs text-gray-400">Real-time status</div>
+            </div>
+          </div>
+
+          <div class="glass-panel p-3.5 rounded-xl flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-950 border border-emerald-500/30 flex items-center justify-center text-[#00ff88]">
+              <i data-lucide="badge-dollar-sign" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">No Hidden Cost</div>
+              <div class="text-xs text-gray-400">Fixed rate/km</div>
+            </div>
+          </div>
+
+          <div class="glass-panel p-3.5 rounded-xl flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-950 border border-emerald-500/30 flex items-center justify-center text-[#00ff88]">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Sanitized Cars</div>
+              <div class="text-xs text-gray-400">Clean & fresh</div>
+            </div>
+          </div>
+
+          <div class="glass-panel p-3.5 rounded-xl flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-950 border border-emerald-500/30 flex items-center justify-center text-[#00ff88]">
+              <i data-lucide="headphones" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">24/7 Hotline</div>
+              <div class="text-xs text-gray-400">8438142815</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Booking Engine & Instant Fare Calculator -->
+  <section id="booking-section" class="py-16 bg-[#0a100d] border-y border-emerald-950 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#00ff88]">Instant Estimation & Dispatch</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-1">
+          Book Your Ride in 30 Seconds
+        </h2>
+        <p class="text-gray-400 text-sm sm:text-base mt-2">
+          Calculate instant fares with transparent per-kilometer billing and zero surge pricing.
+        </p>
+      </div>
+
+      <!-- Booking Form & Fare Card Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Booking Form -->
+        <div class="lg:col-span-7 glass-panel p-6 sm:p-8 rounded-2xl border border-emerald-500/30 shadow-2xl">
+          
+          <form id="bookingForm" class="space-y-6">
+            
+            <!-- Trip Type Selector Tabs -->
+            <div>
+              <label class="block text-xs font-bold uppercase text-emerald-400 mb-2">Trip Category</label>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                <label class="cursor-pointer">
+                  <input type="radio" name="tripType" value="oneway" checked class="peer sr-only">
+                  <div class="py-2.5 px-3 text-center rounded-xl border border-emerald-900/50 bg-black/40 text-xs font-bold text-gray-300 peer-checked:bg-[#00ff88] peer-checked:text-black peer-checked:border-[#00ff88] transition shadow-sm">
+                    One-Way Drop
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="tripType" value="roundtrip" class="peer sr-only">
+                  <div class="py-2.5 px-3 text-center rounded-xl border border-emerald-900/50 bg-black/40 text-xs font-bold text-gray-300 peer-checked:bg-[#00ff88] peer-checked:text-black peer-checked:border-[#00ff88] transition shadow-sm">
+                    Round Trip
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="tripType" value="local" class="peer sr-only">
+                  <div class="py-2.5 px-3 text-center rounded-xl border border-emerald-900/50 bg-black/40 text-xs font-bold text-gray-300 peer-checked:bg-[#00ff88] peer-checked:text-black peer-checked:border-[#00ff88] transition shadow-sm">
+                    Local (8hr/80km)
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="tripType" value="airport" class="peer sr-only">
+                  <div class="py-2.5 px-3 text-center rounded-xl border border-emerald-900/50 bg-black/40 text-xs font-bold text-gray-300 peer-checked:bg-[#00ff88] peer-checked:text-black peer-checked:border-[#00ff88] transition shadow-sm">
+                    Airport Transfer
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Route Inputs -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              
+              <!-- Pickup City / Location -->
+              <div>
+                <label for="pickupCity" class="block text-xs font-bold text-gray-300 mb-1.5 flex items-center gap-1.5">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                  <span>Pickup City / Location</span>
+                </label>
+                <select id="pickupCity" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88] transition">
+                  <option value="chennai" selected>Chennai</option>
+                  <option value="bangalore">Bangalore</option>
+                  <option value="coimbatore">Coimbatore</option>
+                  <option value="madurai">Madurai</option>
+                  <option value="salem">Salem</option>
+                  <option value="trichy">Tiruchirappalli (Trichy)</option>
+                  <option value="ooty">Ooty</option>
+                  <option value="kodaikanal">Kodaikanal</option>
+                  <option value="tirupati">Tirupati</option>
+                  <option value="pondicherry">Pondicherry</option>
+                </select>
+              </div>
+
+              <!-- Drop City / Location -->
+              <div id="dropCityContainer">
+                <label for="dropCity" class="block text-xs font-bold text-gray-300 mb-1.5 flex items-center gap-1.5">
+                  <i data-lucide="flag" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                  <span>Destination / Drop City</span>
+                </label>
+                <select id="dropCity" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88] transition">
+                  <option value="bangalore" selected>Bangalore</option>
+                  <option value="chennai">Chennai</option>
+                  <option value="coimbatore">Coimbatore</option>
+                  <option value="madurai">Madurai</option>
+                  <option value="salem">Salem</option>
+                  <option value="ooty">Ooty</option>
+                  <option value="kodaikanal">Kodaikanal</option>
+                  <option value="mysore">Mysore</option>
+                  <option value="tirupati">Tirupati</option>
+                  <option value="pondicherry">Pondicherry</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Vehicle & Duration Selection -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="vehicleType" class="block text-xs font-bold text-gray-300 mb-1.5 flex items-center gap-1.5">
+                  <i data-lucide="car" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                  <span>Choose Vehicle</span>
+                </label>
+                <select id="vehicleType" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88] transition">
+                  <option value="sedan">Sedan (Dzire / Etios) - ₹13/km</option>
+                  <option value="ertiga">Ertiga 6-Seater - ₹16/km</option>
+                  <option value="innova" selected>Innova Crysta Luxury - ₹19/km</option>
+                  <option value="fortuner">Fortuner VIP Class - ₹32/km</option>
+                  <option value="tempo">Tempo Traveller (12/17S) - ₹24/km</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="tripDuration" class="block text-xs font-bold text-gray-300 mb-1.5 flex items-center gap-1.5">
+                  <i data-lucide="clock" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                  <span>Trip Duration (Days)</span>
+                </label>
+                <select id="tripDuration" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88] transition">
+                  <option value="1" selected>1 Day</option>
+                  <option value="2">2 Days</option>
+                  <option value="3">3 Days</option>
+                  <option value="4">4 Days</option>
+                  <option value="5">5+ Days Tour</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Date & Time -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="travelDate" class="block text-xs font-bold text-gray-300 mb-1.5 flex items-center gap-1.5">
+                  <i data-lucide="calendar" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                  <span>Travel Date</span>
+                </label>
+                <input type="date" id="travelDate" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88] transition">
+              </div>
+
+              <div>
+                <label for="pickupTime" class="block text-xs font-bold text-gray-300 mb-1.5 flex items-center gap-1.5">
+                  <i data-lucide="clock" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                  <span>Pickup Time</span>
+                </label>
+                <input type="time" id="pickupTime" value="06:00" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88] transition">
+              </div>
+            </div>
+
+            <!-- Customer Contact Details -->
+            <div class="border-t border-emerald-950 pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="custName" class="block text-xs font-bold text-gray-300 mb-1.5">Your Full Name</label>
+                <input type="text" id="custName" placeholder="e.g. Ramesh Kumar" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88] transition">
+              </div>
+
+              <div>
+                <label for="custPhone" class="block text-xs font-bold text-gray-300 mb-1.5">Contact Mobile Number *</label>
+                <input type="tel" id="custPhone" placeholder="e.g. 9876543210" required class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88] transition">
+              </div>
+            </div>
+
+            <div>
+              <label for="tripNotes" class="block text-xs font-bold text-gray-300 mb-1.5">Special Instructions / Landmarks (Optional)</label>
+              <textarea id="tripNotes" rows="2" placeholder="e.g. Need child seat, early morning departure, luggage details" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-[#00ff88] transition"></textarea>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <button type="submit" class="glow-btn py-3.5 px-6 rounded-xl text-sm font-black flex items-center justify-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                <span>Confirm & Dispatch Cab</span>
+              </button>
+
+              <button type="button" id="btnBookViaWhatsApp" class="py-3.5 px-6 rounded-xl text-sm font-bold bg-[#0d2218] border border-[#00ff88] text-[#00ff88] hover:bg-[#00ff88] hover:text-black transition flex items-center justify-center gap-2">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Book via WhatsApp</span>
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+        <!-- Right Column: Live Fare Preview HUD -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-emerald-500/40 relative overflow-hidden bg-gradient-to-b from-[#0f1b14] to-[#080d0a]">
+            
+            <div class="flex items-center justify-between pb-4 border-b border-emerald-900/50">
+              <div>
+                <span class="text-[11px] font-bold text-emerald-400 tracking-wider uppercase">Estimated Fare Summary</span>
+                <h3 id="fareSelectedVehicle" class="font-heading text-lg font-bold text-white">Toyota Innova Crysta</h3>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-950 text-[#00ff88] border border-emerald-500/30">
+                Transparent Rate
+              </span>
+            </div>
+
+            <!-- Line Items -->
+            <div class="py-6 space-y-3.5 text-sm">
+              
+              <div class="flex items-center justify-between text-gray-300">
+                <span class="flex items-center gap-2">
+                  <i data-lucide="gauge" class="w-4 h-4 text-emerald-400"></i>
+                  <span>Estimated Distance:</span>
+                </span>
+                <span id="fareEstKm" class="font-bold text-white">350 km</span>
+              </div>
+
+              <div class="flex items-center justify-between text-gray-300">
+                <span class="flex items-center gap-2">
+                  <i data-lucide="tag" class="w-4 h-4 text-emerald-400"></i>
+                  <span>Per Km Rate:</span>
+                </span>
+                <span id="fareRatePerKm" class="font-bold text-white">₹19/km</span>
+              </div>
+
+              <div class="flex items-center justify-between text-gray-300">
+                <span class="flex items-center gap-2">
+                  <i data-lucide="wallet" class="w-4 h-4 text-emerald-400"></i>
+                  <span>Base Distance Fare:</span>
+                </span>
+                <span id="fareBaseAmount" class="font-bold text-white">₹6,650</span>
+              </div>
+
+              <div class="flex items-center justify-between text-gray-300">
+                <span class="flex items-center gap-2">
+                  <i data-lucide="user-check" class="w-4 h-4 text-emerald-400"></i>
+                  <span>Driver Allowance (Batta):</span>
+                </span>
+                <span id="fareDriverAllowance" class="font-bold text-white">₹600</span>
+              </div>
+
+              <div class="flex items-center justify-between text-gray-300">
+                <span class="flex items-center gap-2">
+                  <i data-lucide="receipt" class="w-4 h-4 text-emerald-400"></i>
+                  <span>Estimated Toll & Taxes:</span>
+                </span>
+                <span id="fareTollEstimate" class="font-bold text-white">₹450</span>
+              </div>
+
+            </div>
+
+            <!-- Total Amount Card -->
+            <div class="pt-4 border-t border-emerald-900/60 flex items-center justify-between">
+              <div>
+                <span class="text-xs text-gray-400 block">Total Estimated Amount</span>
+                <span class="text-[11px] text-emerald-400 font-medium">Inclusive of driver allowance</span>
+              </div>
+              <div id="fareTotalEstimate" class="font-heading text-3xl font-black text-[#00ff88] drop-shadow-[0_0_15px_rgba(0,255,136,0.5)]">
+                ₹7,700
+              </div>
+            </div>
+
+            <!-- Quick Assistance Call Badge -->
+            <div class="mt-6 p-4 rounded-xl bg-black/60 border border-emerald-500/20 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-emerald-950 flex items-center justify-center text-[#00ff88]">
+                  <i data-lucide="phone-forwarded" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-gray-400">Need Immediate Booking?</div>
+                  <div class="text-sm font-bold text-white">Call 24/7 Dispatch</div>
+                </div>
+              </div>
+              <a href="tel:8438142815" class="bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold text-xs px-3.5 py-2 rounded-lg transition">
+                8438142815
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Feature Cards Below Fare -->
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <div class="p-3 rounded-xl bg-black/40 border border-emerald-950 flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-[#00ff88]"></i>
+              <span class="text-gray-300">Zero Cancellation Fee</span>
+            </div>
+            <div class="p-3 rounded-xl bg-black/40 border border-emerald-950 flex items-center gap-2">
+              <i data-lucide="shield" class="w-4 h-4 text-[#00ff88]"></i>
+              <span class="text-gray-300">Live GPS Protected</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Live Car GPS Tracking Section ("N.K LiveTrack") -->
+  <section id="live-tracking" class="py-20 relative bg-[#070b09] overflow-hidden">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950 border border-emerald-500/40 text-[#00ff88] text-xs font-bold mb-3">
+            <span class="w-2 h-2 rounded-full bg-[#00ff88] animate-ping"></span>
+            <span>N.K LIVETRACK • GPS SATELLITE TELEMETRY</span>
+          </div>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">
+            Live Vehicle Tracking Center
+          </h2>
+          <p class="text-gray-400 text-sm max-w-xl mt-1">
+            Track our active fleet in real-time. Enter your booking or vehicle tracking ID to view live speed, route progress, and driver status.
+          </p>
+        </div>
+
+        <!-- Tracking Code Search Form -->
+        <form id="trackingSearchForm" class="flex items-center gap-2 w-full md:w-auto">
+          <div class="relative flex-1 md:w-64">
+            <input type="text" id="trackingCodeInput" placeholder="Enter ID e.g. NK-7891" class="w-full bg-[#0d1612] border border-emerald-500/40 rounded-xl px-4 py-2.5 text-xs text-white uppercase placeholder-gray-500 focus:outline-none focus:border-[#00ff88]">
+          </div>
+          <button type="submit" class="glow-btn px-4 py-2.5 rounded-xl text-xs font-bold flex items-center gap-1.5 whitespace-nowrap">
+            <i data-lucide="search" class="w-3.5 h-3.5"></i>
+            <span>Track</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Active Fleet Quick Selectors -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-4 scrollbar-none">
+        <span class="text-xs font-bold text-gray-400 whitespace-nowrap mr-2">Active Trips:</span>
+        <button class="tracking-car-btn py-2 px-3.5 rounded-xl border text-xs font-bold whitespace-nowrap transition flex items-center gap-2" data-vehicle-id="NK-7891">
+          <span class="w-2 h-2 rounded-full bg-[#00ff88]"></span>
+          <span>NK-7891 (Innova Crysta - Chennai → Blr)</span>
+        </button>
+        <button class="tracking-car-btn py-2 px-3.5 rounded-xl border text-xs font-bold whitespace-nowrap transition flex items-center gap-2" data-vehicle-id="NK-5542">
+          <span class="w-2 h-2 rounded-full bg-[#00ff88]"></span>
+          <span>NK-5542 (Dzire - Coimbatore → Ooty)</span>
+        </button>
+        <button class="tracking-car-btn py-2 px-3.5 rounded-xl border text-xs font-bold whitespace-nowrap transition flex items-center gap-2" data-vehicle-id="NK-9018">
+          <span class="w-2 h-2 rounded-full bg-[#00ff88]"></span>
+          <span>NK-9018 (Tempo Traveller - Madurai → Kodai)</span>
+        </button>
+        <button class="tracking-car-btn py-2 px-3.5 rounded-xl border text-xs font-bold whitespace-nowrap transition flex items-center gap-2" data-vehicle-id="NK-3321">
+          <span class="w-2 h-2 rounded-full bg-[#00ff88]"></span>
+          <span>NK-3321 (Fortuner - Airport VIP)</span>
+        </button>
+      </div>
+
+      <!-- Map & Telemetry Dashboard Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        
+        <!-- Interactive Leaflet Map Container -->
+        <div class="lg:col-span-8 min-h-[460px] lg:min-h-[540px] rounded-2xl overflow-hidden border border-emerald-500/40 shadow-2xl relative">
+          <div id="trackingMap"></div>
+          
+          <!-- Map Overlay Badges -->
+          <div class="absolute top-4 left-4 z-20 pointer-events-none flex flex-wrap gap-2">
+            <div class="bg-[#080d0a]/90 backdrop-blur-md border border-emerald-500/40 px-3 py-1.5 rounded-xl text-xs flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-[#00ff88] animate-ping"></span>
+              <span class="font-bold text-white">4 Cabs Active Now</span>
+            </div>
+            <div class="bg-[#080d0a]/90 backdrop-blur-md border border-emerald-950 px-3 py-1.5 rounded-xl text-xs text-gray-400">
+              High-Precision GPS Feeds
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Real-Time Telemetry Cockpit -->
+        <div class="lg:col-span-4 glass-panel p-6 rounded-2xl border border-emerald-500/30 flex flex-col justify-between">
+          
+          <div>
+            <!-- Header Status -->
+            <div class="flex items-center justify-between pb-4 border-b border-emerald-950">
+              <div>
+                <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-widest">Selected Vehicle</span>
+                <h3 id="hudCarId" class="font-heading text-2xl font-black text-white">NK-7891</h3>
+                <p id="hudCarModel" class="text-xs text-gray-400">Toyota Innova Crysta</p>
+              </div>
+              <span id="hudStatus" class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-950 text-[#00ff88] border border-emerald-500/30">
+                In-Transit
+              </span>
+            </div>
+
+            <!-- Route & Live Telemetry Grid -->
+            <div class="py-5 space-y-4">
+              
+              <!-- Route Info -->
+              <div class="p-3 rounded-xl bg-black/50 border border-emerald-950">
+                <span class="text-[11px] text-gray-400 block mb-0.5">Assigned Route</span>
+                <span id="hudRoute" class="text-sm font-bold text-white block">Chennai → Bangalore (NH 48)</span>
+                <span id="hudLocation" class="text-xs text-emerald-400 mt-1 flex items-center gap-1">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                  <span>Near Vellore Toll Plaza</span>
+                </span>
+              </div>
+
+              <!-- Speed & ETA Gauges -->
+              <div class="grid grid-cols-2 gap-3">
+                <div class="p-3.5 rounded-xl bg-black/50 border border-emerald-950">
+                  <span class="text-[11px] text-gray-400 block mb-1">Live Speed</span>
+                  <span id="hudSpeed" class="font-heading text-2xl font-black text-[#00ff88]">72 km/h</span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-black/50 border border-emerald-950">
+                  <span class="text-[11px] text-gray-400 block mb-1">Estimated ETA</span>
+                  <span id="hudEta" class="font-heading text-2xl font-black text-white">2h 15m</span>
+                </div>
+              </div>
+
+              <!-- Distance & Fuel -->
+              <div class="grid grid-cols-2 gap-3">
+                <div class="p-3 rounded-xl bg-black/50 border border-emerald-950">
+                  <span class="text-[10px] text-gray-400 block">Distance Remaining</span>
+                  <span id="hudDistance" class="text-sm font-bold text-gray-200">138 km</span>
+                </div>
+                <div class="p-3 rounded-xl bg-black/50 border border-emerald-950">
+                  <span class="text-[10px] text-gray-400 block">Fuel / Energy</span>
+                  <span id="hudFuel" class="text-sm font-bold text-emerald-400">82% Full</span>
+                </div>
+              </div>
+
+              <!-- Driver Information -->
+              <div class="p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/20 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-emerald-900/60 border border-[#00ff88] flex items-center justify-center text-[#00ff88]">
+                    <i data-lucide="user" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <span class="text-[10px] text-gray-400 uppercase">Assigned Chauffeur</span>
+                    <h4 id="hudDriver" class="text-sm font-bold text-white">Murugan K.</h4>
+                    <span class="text-[11px] text-[#00ff88] font-medium">★ 4.95 Rating • Verified</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Bottom Action Buttons -->
+          <div class="pt-4 border-t border-emerald-950 flex flex-col gap-2">
+            <a id="hudPhoneCallBtn" href="tel:8438142815" class="glow-btn w-full py-3 rounded-xl text-xs font-black flex items-center justify-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+              <span>Call Driver (8438142815)</span>
+            </a>
+            <a href="https://wa.me/918438142815?text=Hello%20NK%20Transports,%20I%20am%20tracking%20car%20and%20need%20an%20update" target="_blank" class="w-full py-2.5 rounded-xl text-xs font-bold border border-emerald-900/60 bg-black/60 text-emerald-300 hover:border-emerald-500 text-center transition">
+              Share Live Tracking Link with Family
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Fleet Showcase Section -->
+  <section id="fleet" class="py-20 bg-[#0a0f0d] border-t border-emerald-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-[#00ff88]">Well-Maintained & Sanitized</span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-1">
+            Our Premium Fleet
+          </h2>
+          <p class="text-gray-400 text-sm mt-1 max-w-lg">
+            Pick from modern sedans, family SUVs, VIP luxury cars, and 12-17 seater group tempo travellers.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+          <button class="fleet-filter-btn px-4 py-2 rounded-xl border text-xs font-bold transition bg-emerald-500 text-black border-emerald-400" data-filter="all">All Vehicles</button>
+          <button class="fleet-filter-btn px-4 py-2 rounded-xl border text-xs font-bold transition bg-black/60 text-gray-400 border-emerald-900/40" data-filter="sedan">Sedans</button>
+          <button class="fleet-filter-btn px-4 py-2 rounded-xl border text-xs font-bold transition bg-black/60 text-gray-400 border-emerald-900/40" data-filter="suv">SUVs</button>
+          <button class="fleet-filter-btn px-4 py-2 rounded-xl border text-xs font-bold transition bg-black/60 text-gray-400 border-emerald-900/40" data-filter="luxury">VIP Luxury</button>
+          <button class="fleet-filter-btn px-4 py-2 rounded-xl border text-xs font-bold transition bg-black/60 text-gray-400 border-emerald-900/40" data-filter="group">Group / Van</button>
+        </div>
+      </div>
+
+      <!-- Fleet Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Swift Dzire / Etios -->
+        <div class="fleet-card glass-card-interactive rounded-2xl overflow-hidden flex flex-col justify-between" data-category="sedan">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-950 text-[#00ff88] border border-emerald-500/30">Economy Sedan</span>
+              <span class="font-heading font-black text-xl text-[#00ff88]">₹13<span class="text-xs text-gray-400 font-normal">/km</span></span>
+            </div>
+            
+            <h3 class="font-heading text-xl font-bold text-white mb-1">Maruti Suzuki Dzire / Etios</h3>
+            <p class="text-xs text-gray-400 mb-6">Perfect for budget outstation drops, airport transfers, and couples.</p>
+
+            <div class="grid grid-cols-3 gap-2 py-4 border-y border-emerald-950 text-center text-xs">
+              <div>
+                <span class="text-gray-400 block text-[10px]">Seats</span>
+                <span class="font-bold text-white">4 + 1</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block text-[10px]">Luggage</span>
+                <span class="font-bold text-white">2 Bags</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block text-[10px]">AC Type</span>
+                <span class="font-bold text-white">Climate AC</span>
+              </div>
+            </div>
+
+            <ul class="mt-4 space-y-2 text-xs text-gray-300">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Live GPS Tracking active</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Bluetooth Music & USB Charging</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Clean & Sanitized prior to trip</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-6 pt-0">
+            <button class="book-vehicle-quick-btn glow-btn-outline w-full py-3 rounded-xl text-xs font-bold flex items-center justify-center gap-2" data-vehicle-type="sedan">
+              <span>Book This Car</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2: Maruti Suzuki Ertiga -->
+        <div class="fleet-card glass-card-interactive rounded-2xl overflow-hidden flex flex-col justify-between" data-category="suv">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-950 text-[#00ff88] border border-emerald-500/30">Family SUV</span>
+              <span class="font-heading font-black text-xl text-[#00ff88]">₹16<span class="text-xs text-gray-400 font-normal">/km</span></span>
+            </div>
+            
+            <h3 class="font-heading text-xl font-bold text-white mb-1">Maruti Suzuki Ertiga</h3>
+            <p class="text-xs text-gray-400 mb-6">Spacious 6-seater family favorite for weekend getaways and holidays.</p>
+
+            <div class="grid grid-cols-3 gap-2 py-4 border-y border-emerald-950 text-center text-xs">
+              <div>
+                <span class="text-gray-400 block text-[10px]">Seats</span>
+                <span class="font-bold text-white">6 + 1</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block text-[10px]">Luggage</span>
+                <span class="font-bold text-white">3 Bags</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block text-[10px]">AC Type</span>
+                <span class="font-bold text-white">Dual AC</span>
+              </div>
+            </div>
+
+            <ul class="mt-4 space-y-2 text-xs text-gray-300">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Extra legroom & foldable 3rd row</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Fast USB charge points on all rows</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Smooth ride on highway journeys</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-6 pt-0">
+            <button class="book-vehicle-quick-btn glow-btn-outline w-full py-3 rounded-xl text-xs font-bold flex items-center justify-center gap-2" data-vehicle-type="ertiga">
+              <span>Book This Car</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3: Toyota Innova Crysta (Featured) -->
+        <div class="fleet-card glass-card-interactive rounded-2xl overflow-hidden flex flex-col justify-between border-2 border-emerald-500/50 relative" data-category="suv">
+          <div class="absolute top-0 right-0 bg-[#00ff88] text-black text-[10px] font-black uppercase px-3 py-1 rounded-bl-xl tracking-wider">
+            Most Popular
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-950 text-[#00ff88] border border-emerald-500/30">Premium Comfort</span>
+              <span class="font-heading font-black text-xl text-[#00ff88]">₹19<span class="text-xs text-gray-400 font-normal">/km</span></span>
+            </div>
+            
+            <h3 class="font-heading text-xl font-bold text-white mb-1">Toyota Innova Crysta</h3>
+            <p class="text-xs text-gray-400 mb-6">The gold standard in long-distance travel, captain seats, and whisper-quiet suspension.</p>
+
+            <div class="grid grid-cols-3 gap-2 py-4 border-y border-emerald-950 text-center text-xs">
+              <div>
+                <span class="text-gray-400 block text-[10px]">Seats</span>
+                <span class="font-bold text-white">7 + 1</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block text-[10px]">Luggage</span>
+                <span class="font-bold text-white">4 Large Bags</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block text-[10px]">Seating</span>
+                <span class="font-bold text-white">Captain Seats</span>
+              </div>
+            </div>
+
+            <ul class="mt-4 space-y-2 text-xs text-gray-300">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Supreme highway comfort & safety</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Individual AC vents & reading lamps</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Experienced long-distance captain</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-6 pt-0">
+            <button class="book-vehicle-quick-btn glow-btn w-full py-3 rounded-xl text-xs font-black flex items-center justify-center gap-2" data-vehicle-type="innova">
+              <span>Book Innova Crysta</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 4: Toyota Fortuner -->
+        <div class="fleet-card glass-card-interactive rounded-2xl overflow-hidden flex flex-col justify-between" data-category="luxury">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-950 text-[#00ff88] border border-emerald-500/30">VIP Class</span>
+              <span class="font-heading font-black text-xl text-[#00ff88]">₹32<span class="text-xs text-gray-400 font-normal">/km</span></span>
+            </div>
+            
+            <h3 class="font-heading text-xl font-bold text-white mb-1">Toyota Fortuner 4x4</h3>
+            <p class="text-xs text-gray-400 mb-6">VIP delegations, weddings, and high-profile corporate movements.</p>
+
+            <div class="grid grid-cols-3 gap-2 py-4 border-y border-emerald-950 text-center text-xs">
+              <div>
+                <span class="text-gray-400 block text-[10px]">Seats</span>
+                <span class="font-bold text-white">6 + 1</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block text-[10px]">Luggage</span>
+                <span class="font-bold text-white">4 Bags</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block text-[10px]">Drivetrain</span>
+                <span class="font-bold text-white">4x4 All-Terrain</span>
+              </div>
+            </div>
+
+            <ul class="mt-4 space-y-2 text-xs text-gray-300">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Executive black leather interior</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>VIP escort / wedding arrival readiness</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Dedicated senior chauffeur</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-6 pt-0">
+            <button class="book-vehicle-quick-btn glow-btn-outline w-full py-3 rounded-xl text-xs font-bold flex items-center justify-center gap-2" data-vehicle-type="fortuner">
+              <span>Book VIP Fortuner</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 5: Force Tempo Traveller -->
+        <div class="fleet-card glass-card-interactive rounded-2xl overflow-hidden flex flex-col justify-between" data-category="group">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-950 text-[#00ff88] border border-emerald-500/30">Group Tours</span>
+              <span class="font-heading font-black text-xl text-[#00ff88]">₹24<span class="text-xs text-gray-400 font-normal">/km</span></span>
+            </div>
+            
+            <h3 class="font-heading text-xl font-bold text-white mb-1">Force Tempo Traveller (12/17S)</h3>
+            <p class="text-xs text-gray-400 mb-6">Ideal for large families, corporate outings, pilgrimage and hill station tours.</p>
+
+            <div class="grid grid-cols-3 gap-2 py-4 border-y border-emerald-950 text-center text-xs">
+              <div>
+                <span class="text-gray-400 block text-[10px]">Seats</span>
+                <span class="font-bold text-white">12 - 17 Seats</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block text-[10px]">Luggage</span>
+                <span class="font-bold text-white">12+ Bags</span>
+              </div>
+              <div>
+                <span class="text-gray-400 block text-[10px]">Comfort</span>
+                <span class="font-bold text-white">Pushback Seats</span>
+              </div>
+            </div>
+
+            <ul class="mt-4 space-y-2 text-xs text-gray-300">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>LED TV, Music System & Mic Setup</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Spacious luggage rooftop carrier</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Experienced hill station driver</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-6 pt-0">
+            <button class="book-vehicle-quick-btn glow-btn-outline w-full py-3 rounded-xl text-xs font-bold flex items-center justify-center gap-2" data-vehicle-type="tempo">
+              <span>Book Tempo Traveller</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 6: 24/7 Custom Fleet Inquiry -->
+        <div class="fleet-card glass-panel rounded-2xl overflow-hidden flex flex-col justify-between border border-emerald-500/20 bg-gradient-to-br from-[#0c1811] to-[#060e0a]" data-category="group">
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-500/40 flex items-center justify-center text-[#00ff88] mb-4">
+              <i data-lucide="bus" class="w-6 h-6"></i>
+            </div>
+            
+            <h3 class="font-heading text-xl font-bold text-white mb-2">Need 21 - 45 Seater Luxury Buses?</h3>
+            <p class="text-xs text-gray-400 mb-6">
+              We provide AC luxury coaches and BharatBenz buses for wedding guest logistics, college excursions, and corporate annual days.
+            </p>
+
+            <div class="p-4 rounded-xl bg-black/60 border border-emerald-950 mb-6">
+              <span class="text-xs text-gray-300 block mb-1">Instant Custom Quote:</span>
+              <div class="text-base font-extrabold text-[#00ff88]">Call +91 8438142815</div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0">
+            <a href="tel:8438142815" class="glow-btn w-full py-3 rounded-xl text-xs font-black flex items-center justify-center gap-2">
+              <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+              <span>Call For Bus Booking</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-[#070b09] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#00ff88]">End-to-End Mobility Solutions</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-1">
+          Travel Services We Specialize In
+        </h2>
+        <p class="text-gray-400 text-sm mt-2">
+          Tailored transportation crafted for safety, dependability, and maximum punctuality.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950 hover:border-emerald-500/40 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-500/30 flex items-center justify-center text-[#00ff88] mb-5">
+            <i data-lucide="map" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">Outstation Round Trips & Drops</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            One-way drops or multi-day interstate round trips with zero hidden toll surprises. Pay only for the kilometers you travel.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950 hover:border-emerald-500/40 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-500/30 flex items-center justify-center text-[#00ff88] mb-5">
+            <i data-lucide="plane" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">24/7 Airport Pickups & Drops</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Never miss a flight. We track your flight timings in real-time to adjust chauffeur arrival even during late delays.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950 hover:border-emerald-500/40 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-500/30 flex items-center justify-center text-[#00ff88] mb-5">
+            <i data-lucide="briefcase" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">Corporate & Executive Travel</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Monthly billing, GST invoices, and dedicated fleet management for tech companies, executives, and VIP guests.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950 hover:border-emerald-500/40 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-500/30 flex items-center justify-center text-[#00ff88] mb-5">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">Wedding & Event Logistics</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Seamless convoy coordination for marriage events, airport guest shuttles, and luxury groom/bride transport.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950 hover:border-emerald-500/40 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-500/30 flex items-center justify-center text-[#00ff88] mb-5">
+            <i data-lucide="mountain-snow" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">Hill Station Specials</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Drivers certified for 36 hairpin bends of Ooty, misty roads of Kodaikanal, Yercaud, and scenic ghats of Munnar.
+          </p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950 hover:border-emerald-500/40 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-500/30 flex items-center justify-center text-[#00ff88] mb-5">
+            <i data-lucide="compass" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">Pilgrimage & Heritage Tours</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Dedicated temple tour packages covering Tirupati, Rameshwaram, Madurai Meenakshi, Thanjavur, and Palani.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Popular Tour Packages -->
+  <section id="tour-packages" class="py-20 bg-[#0a0f0d] border-t border-emerald-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#00ff88]">Handcrafted Itineraries</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-1">
+          Top Weekend & Holiday Packages
+        </h2>
+        <p class="text-gray-400 text-sm mt-2">
+          Complete transparent packages including vehicle, driver batta, toll permits, and sightseeing.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Package 1: Chennai to Tirupati Balaji Darshan -->
+        <div class="glass-panel rounded-2xl p-6 border border-emerald-500/30 hover:border-emerald-400 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs bg-emerald-950 text-[#00ff88] border border-emerald-500/30 px-3 py-1 rounded-full font-bold">1 Day Quick Tour</span>
+              <span class="font-heading font-black text-xl text-white">₹4,999</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">Chennai → Tirupati VIP Darshan</h3>
+            <p class="text-xs text-gray-400 mb-4">Doorstep early morning pickup, temple darshan coordination, Padmavathi Ammavari darshan, and safe evening return.</p>
+            
+            <div class="space-y-1.5 text-xs text-gray-300 border-t border-emerald-950 pt-3">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Toll & AP State Permit Included</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Sedan / Innova options</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6">
+            <a href="https://wa.me/918438142815?text=Hello%20NK%20Transports,%20I%20want%20to%20book%20Tirupati%20Darshan%20Package" target="_blank" class="glow-btn w-full py-2.5 rounded-xl text-xs font-bold text-center block">
+              Book Tirupati Package
+            </a>
+          </div>
+        </div>
+
+        <!-- Package 2: Coimbatore to Ooty & Coonoor -->
+        <div class="glass-panel rounded-2xl p-6 border border-emerald-500/30 hover:border-emerald-400 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs bg-emerald-950 text-[#00ff88] border border-emerald-500/30 px-3 py-1 rounded-full font-bold">3 Days / 2 Nights</span>
+              <span class="font-heading font-black text-xl text-white">₹9,499</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">Coimbatore → Ooty & Coonoor</h3>
+            <p class="text-xs text-gray-400 mb-4">Botanical Gardens, Pykara Lake, Doddabetta Peak, Tea Estates, and Nilgiri Mountain Train drop.</p>
+            
+            <div class="space-y-1.5 text-xs text-gray-300 border-t border-emerald-950 pt-3">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Ghat road certified chauffeur</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Flexible local sightseeing hours</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6">
+            <a href="https://wa.me/918438142815?text=Hello%20NK%20Transports,%20I%20want%20to%20book%20Ooty%20Holiday%20Package" target="_blank" class="glow-btn w-full py-2.5 rounded-xl text-xs font-bold text-center block">
+              Book Ooty Package
+            </a>
+          </div>
+        </div>
+
+        <!-- Package 3: Madurai to Kodaikanal Hill Tour -->
+        <div class="glass-panel rounded-2xl p-6 border border-emerald-500/30 hover:border-emerald-400 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs bg-emerald-950 text-[#00ff88] border border-emerald-500/30 px-3 py-1 rounded-full font-bold">2 Days / 1 Night</span>
+              <span class="font-heading font-black text-xl text-white">₹7,299</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">Madurai → Kodaikanal Princess of Hills</h3>
+            <p class="text-xs text-gray-400 mb-4">Silver Cascade waterfalls, Kodai Lake boating, Coaker's Walk, Pillar Rocks, and pine forests.</p>
+            
+            <div class="space-y-1.5 text-xs text-gray-300 border-t border-emerald-950 pt-3">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Innova Crysta / Tempo available</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-[#00ff88]"></i>
+                <span>Driver night stay allowance included</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6">
+            <a href="https://wa.me/918438142815?text=Hello%20NK%20Transports,%20I%20want%20to%20book%20Kodaikanal%20Package" target="_blank" class="glow-btn w-full py-2.5 rounded-xl text-xs font-bold text-center block">
+              Book Kodaikanal Package
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose N.K Transports -->
+  <section class="py-20 bg-[#070b09] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#00ff88]">Safety First, Always</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-1">
+          Why Travelers Trust N.K Transports
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950 text-center">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-[#00ff88] mx-auto mb-4">
+            <i data-lucide="radar" class="w-7 h-7"></i>
+          </div>
+          <h4 class="font-heading text-lg font-bold text-white mb-1">Live Family Tracking</h4>
+          <p class="text-xs text-gray-400">Share a live tracking link with your loved ones so they can follow your trip in real time.</p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950 text-center">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-[#00ff88] mx-auto mb-4">
+            <i data-lucide="user-check" class="w-7 h-7"></i>
+          </div>
+          <h4 class="font-heading text-lg font-bold text-white mb-1">Police Verified Chauffeurs</h4>
+          <p class="text-xs text-gray-400">Polite, background-verified drivers with 7+ years of accident-free highway experience.</p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950 text-center">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-[#00ff88] mx-auto mb-4">
+            <i data-lucide="clock-4" class="w-7 h-7"></i>
+          </div>
+          <h4 class="font-heading text-lg font-bold text-white mb-1">On-Time Or ₹500 Off</h4>
+          <p class="text-xs text-gray-400">Our cab arrives 15 minutes before scheduled pickup. Zero delays, guaranteed.</p>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950 text-center">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-[#00ff88] mx-auto mb-4">
+            <i data-lucide="shield-alert" class="w-7 h-7"></i>
+          </div>
+          <h4 class="font-heading text-lg font-bold text-white mb-1">24/7 Roadside Assist</h4>
+          <p class="text-xs text-gray-400">Complete emergency backup with replacement vehicle dispatch across South India corridors.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Customer Testimonials -->
+  <section class="py-20 bg-[#0a0f0d] border-t border-emerald-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="flex items-center justify-center gap-1 text-emerald-400 mb-2">
+          <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+          <span class="text-xs font-bold text-white ml-2">4.9 / 5 (1,250+ Reviews)</span>
+        </div>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">
+          What Our Passengers Say
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950">
+          <div class="flex items-center gap-1 text-emerald-400 mb-4">
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+          </div>
+          <p class="text-xs text-gray-300 leading-relaxed mb-6">
+            "Booked an Innova Crysta for a family trip from Chennai to Tirupati. Driver arrived 20 minutes prior to pickup time. The live tracking link was very comforting for my parents. Highly recommended!"
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-950 border border-emerald-500 flex items-center justify-center font-bold text-[#00ff88]">
+              SK
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Sathish Kumar</div>
+              <div class="text-[11px] text-gray-400">Chennai • Tirupati Trip</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950">
+          <div class="flex items-center gap-1 text-emerald-400 mb-4">
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+          </div>
+          <p class="text-xs text-gray-300 leading-relaxed mb-6">
+            "N.K Transports handled our company's offsite with two 17-seater Tempo Travellers to Ooty. Pristine cleanliness, very polite drivers, and no surprise charges. Contacting 8438142815 gets instant response."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-950 border border-emerald-500 flex items-center justify-center font-bold text-[#00ff88]">
+              AR
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Ananya Raghavan</div>
+              <div class="text-[11px] text-gray-400">Bangalore • Ooty Offsite</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-emerald-950">
+          <div class="flex items-center gap-1 text-emerald-400 mb-4">
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+          </div>
+          <p class="text-xs text-gray-300 leading-relaxed mb-6">
+            "Late night flight landing at Chennai airport. Booked their Dzire cab via WhatsApp. The driver was waiting with my name placard at the arrival gate. Clean car and great AC. 10/10 service."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-950 border border-emerald-500 flex items-center justify-center font-bold text-[#00ff88]">
+              MN
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">M. Natarajan</div>
+              <div class="text-[11px] text-gray-400">Airport Transfer</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive FAQ Accordion -->
+  <section class="py-20 bg-[#070b09] border-t border-emerald-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#00ff88]">Got Questions?</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-1">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="glass-panel rounded-xl overflow-hidden border border-emerald-950">
+          <button class="faq-toggle w-full p-5 text-left flex items-center justify-between text-sm sm:text-base font-bold text-white hover:text-[#00ff88] transition">
+            <span>How do I track my cab in real time?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-emerald-400 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-gray-400 border-t border-emerald-950/60">
+            Once your booking is confirmed, you will receive an SMS and WhatsApp message with your vehicle number and a secure LiveTrack link. You can also enter your Booking ID in the "N.K LiveTrack" section on our website to see live speed, location, and ETA.
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl overflow-hidden border border-emerald-950">
+          <button class="faq-toggle w-full p-5 text-left flex items-center justify-between text-sm sm:text-base font-bold text-white hover:text-[#00ff88] transition">
+            <span>Are tolls, parking, and state permits included in the fare?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-emerald-400 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-gray-400 border-t border-emerald-950/60">
+            Our instant calculator shows the estimated toll and driver allowance. On all one-way and outstation packages, tolls can either be pre-included or paid as per actual FASTag receipts for 100% transparency.
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl overflow-hidden border border-emerald-950">
+          <button class="faq-toggle w-full p-5 text-left flex items-center justify-between text-sm sm:text-base font-bold text-white hover:text-[#00ff88] transition">
+            <span>What is your cancellation policy?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-emerald-400 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-gray-400 border-t border-emerald-950/60">
+            We offer zero-fee cancellations up to 3 hours before the scheduled trip start time. We understand that travel plans can change.
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl overflow-hidden border border-emerald-950">
+          <button class="faq-toggle w-full p-5 text-left flex items-center justify-between text-sm sm:text-base font-bold text-white hover:text-[#00ff88] transition">
+            <span>How can I make an urgent booking right now?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-emerald-400 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-gray-400 border-t border-emerald-950/60">
+            For urgent departures or same-day pickups, call our 24/7 hotline directly at <a href="tel:8438142815" class="text-[#00ff88] font-bold underline">8438142815</a> or click our WhatsApp button. A cab can be dispatched to your doorstep within 30-45 minutes.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section id="contact" class="py-20 bg-[#0a0f0d] border-t border-emerald-950 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Contact Information -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950 text-[#00ff88] text-xs font-bold border border-emerald-500/30">
+            <i data-lucide="headphones" class="w-3.5 h-3.5"></i>
+            <span>24/7 Dispatch Desk</span>
+          </div>
+
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">
+            Get in Touch with N.K Transports
+          </h2>
+          
+          <p class="text-gray-400 text-sm">
+            Whether you need a quick quote, corporate billing contract, or custom holiday itinerary across South India, our travel desk is ready to help 24 hours a day.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <a href="tel:8438142815" class="glass-panel p-4 rounded-xl flex items-center gap-4 hover:border-emerald-400 transition block">
+              <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-[#00ff88] flex items-center justify-center text-[#00ff88] shrink-0">
+                <i data-lucide="phone-call" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-xs text-gray-400 block">Direct Booking Hotline</span>
+                <span class="text-lg font-black text-white hover:text-[#00ff88] transition">+91 8438142815</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/918438142815?text=Hello%20NK%20Transports,%20I%20have%20an%20enquiry" target="_blank" class="glass-panel p-4 rounded-xl flex items-center gap-4 hover:border-emerald-400 transition block">
+              <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-[#00ff88] flex items-center justify-center text-[#00ff88] shrink-0">
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-xs text-gray-400 block">WhatsApp Support & Fare Quotes</span>
+                <span class="text-base font-bold text-emerald-300">Chat with 8438142815</span>
+              </div>
+            </a>
+
+            <div class="glass-panel p-4 rounded-xl flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-500/40 flex items-center justify-center text-[#00ff88] shrink-0">
+                <i data-lucide="map-pin" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-xs text-gray-400 block">Head Hub & Parking Depot</span>
+                <span class="text-sm font-semibold text-white">Tamil Nadu & Bangalore Interstate Corridors</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Quick Inquiry Form -->
+        <div class="lg:col-span-7 glass-panel p-8 rounded-2xl border border-emerald-500/30">
+          <h3 class="font-heading text-xl font-bold text-white mb-2">Send Us an Inquiry</h3>
+          <p class="text-xs text-gray-400 mb-6">Fill this form and our booking team will call you back within 10 minutes.</p>
+
+          <form onsubmit="event.preventDefault(); showToast('Thank you! Our travel manager is calling you at 8438142815', 'success');" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-gray-300 mb-1">Your Name</label>
+                <input type="text" required placeholder="Enter name" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88]">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-gray-300 mb-1">Phone Number</label>
+                <input type="tel" required placeholder="Enter 10-digit number" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88]">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-gray-300 mb-1">Pickup Location</label>
+                <input type="text" placeholder="e.g. Chennai T. Nagar" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88]">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-gray-300 mb-1">Destination</label>
+                <input type="text" placeholder="e.g. Bangalore Whitefield" class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88]">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-gray-300 mb-1">Message / Requirements</label>
+              <textarea rows="3" placeholder="Tell us dates, number of passengers, and vehicle preference..." class="w-full bg-[#070c09] border border-emerald-900/60 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#00ff88]"></textarea>
+            </div>
+
+            <button type="submit" class="glow-btn w-full py-3.5 rounded-xl text-sm font-extrabold flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Send Travel Inquiry</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#050806] border-t border-emerald-950/80 py-12 text-gray-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <div class="md:col-span-1 space-y-3">
+          <div class="font-heading font-black text-xl text-white flex items-center gap-1.5">
+            N.K <span class="text-[#00ff88]">TRANSPORTS</span>
+          </div>
+          <p class="text-gray-400 text-xs leading-relaxed">
+            Leading outstation taxi and vehicle rental network in South India. Known for transparent fares, verified chauffeurs, and real-time GPS live tracking.
+          </p>
+          <div class="pt-2">
+            <span class="text-white font-bold block">Hotline:</span>
+            <a href="tel:8438142815" class="text-[#00ff88] font-black text-base hover:underline">+91 8438142815</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3">Popular Routes</h4>
+          <ul class="space-y-2">
+            <li><a href="#booking-section" class="hover:text-[#00ff88] transition">Chennai to Bangalore Drop Taxi</a></li>
+            <li><a href="#booking-section" class="hover:text-[#00ff88] transition">Coimbatore to Ooty Hill Cab</a></li>
+            <li><a href="#booking-section" class="hover:text-[#00ff88] transition">Madurai to Kodaikanal Tour</a></li>
+            <li><a href="#booking-section" class="hover:text-[#00ff88] transition">Chennai to Tirupati Darshan Taxi</a></li>
+            <li><a href="#booking-section" class="hover:text-[#00ff88] transition">Bangalore to Mysore & Coorg</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3">Our Vehicle Fleet</h4>
+          <ul class="space-y-2">
+            <li><a href="#fleet" class="hover:text-[#00ff88] transition">Swift Dzire (4+1 Economy)</a></li>
+            <li><a href="#fleet" class="hover:text-[#00ff88] transition">Toyota Etios (Sedan Prime)</a></li>
+            <li><a href="#fleet" class="hover:text-[#00ff88] transition">Toyota Innova Crysta (7+1 Luxury)</a></li>
+            <li><a href="#fleet" class="hover:text-[#00ff88] transition">Toyota Fortuner 4x4 (VIP)</a></li>
+            <li><a href="#fleet" class="hover:text-[#00ff88] transition">Force Tempo Traveller (12/17 Seater)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3">24/7 Operations Desk</h4>
+          <p class="text-xs text-gray-400 leading-relaxed mb-3">
+            Open 365 days a year including festive holidays. Clean vehicles dispatched within 30 minutes.
+          </p>
+          <div class="flex items-center gap-3">
+            <a href="tel:8438142815" class="p-2.5 rounded-xl bg-emerald-950 border border-emerald-500/40 text-[#00ff88] hover:bg-emerald-900 transition">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/918438142815" target="_blank" class="p-2.5 rounded-xl bg-emerald-950 border border-emerald-500/40 text-[#00ff88] hover:bg-emerald-900 transition">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+            <a href="#live-tracking" class="p-2.5 rounded-xl bg-emerald-950 border border-emerald-500/40 text-[#00ff88] hover:bg-emerald-900 transition">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-emerald-950/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-gray-500 text-[11px]">
+        <div>
+          © 2026 N.K Transports. All Rights Reserved. Contact: 8438142815.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+          <a href="#" class="hover:text-gray-300">Terms of Travel</a>
+          <a href="#live-tracking" class="text-emerald-400 hover:text-[#00ff88]">LiveTrack GPS Portal</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Booking Confirmation Modal -->
+  <div id="bookingConfirmationModal" class="fixed inset-0 z-[100] bg-black/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-[#0f1713] border border-emerald-500 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative overflow-hidden animate-in fade-in zoom-in duration-200">
+      
+      <div class="w-12 h-12 rounded-full bg-emerald-950 border border-[#00ff88] flex items-center justify-center text-[#00ff88] mx-auto mb-4">
+        <i data-lucide="check" class="w-6 h-6"></i>
+      </div>
+
+      <h3 class="font-heading text-2xl font-black text-center text-white mb-1">
+        Booking Request Received!
+      </h3>
+      <p class="text-xs text-gray-400 text-center mb-6">
+        Reference ID: <span id="modalBookingRef" class="font-mono text-[#00ff88] font-bold">NK-789012</span>
+      </p>
+
+      <!-- Slip Details -->
+      <div class="bg-black/60 rounded-xl p-4 border border-emerald-950 space-y-2.5 text-xs mb-6">
+        <div class="flex justify-between">
+          <span class="text-gray-400">Passenger:</span>
+          <span id="modalCustName" class="font-bold text-white">Guest</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-gray-400">Mobile:</span>
+          <span id="modalCustPhone" class="font-bold text-[#00ff88]">8438142815</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-gray-400">Vehicle:</span>
+          <span id="modalVehicle" class="font-bold text-white">Toyota Innova Crysta</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-gray-400">Route:</span>
+          <span id="modalRoute" class="font-bold text-white">Chennai → Bangalore</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-gray-400">Travel Date & Time:</span>
+          <span id="modalDateTime" class="font-bold text-white">Tomorrow at 06:00 AM</span>
+        </div>
+        <div class="flex justify-between border-t border-emerald-950 pt-2 font-bold text-sm">
+          <span class="text-gray-300">Est. Total:</span>
+          <span id="modalEstFare" class="text-[#00ff88]">₹7,700</span>
+        </div>
+      </div>
+
+      <p class="text-[11px] text-gray-400 text-center mb-6">
+        Our dispatcher will call you from <strong class="text-white">8438142815</strong> to confirm your vehicle assignment and send your live driver GPS tracking link.
+      </p>
+
+      <div class="grid grid-cols-2 gap-3">
+        <button id="modalWhatsAppBtn" class="glow-btn py-3 rounded-xl text-xs font-black flex items-center justify-center gap-2">
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+          <span>Send on WhatsApp</span>
+        </button>
+        <button id="closeModalBtn" class="py-3 rounded-xl text-xs font-bold bg-black/60 border border-emerald-900/60 text-gray-300 hover:text-white transition">
+          Close Window
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Call & WhatsApp Action Pill -->
+  <div class="floating-call-pill">
+    <!-- WhatsApp Floating Trigger -->
+    <a href="https://wa.me/918438142815?text=Hello%20NK%20Transports,%20I%20would%20like%20to%20book%20a%20cab" target="_blank" aria-label="Chat on WhatsApp" class="w-14 h-14 rounded-full bg-[#128c7e] hover:bg-[#25d366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300 border border-emerald-300/40">
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+    
+    <!-- Phone Call Floating Trigger -->
+    <a href="tel:8438142815" aria-label="Call N.K Transports" class="w-14 h-14 rounded-full bg-gradient-to-tr from-[#00ff88] to-[#10b981] text-black flex items-center justify-center shadow-[0_0_25px_rgba(0,255,136,0.6)] hover:scale-110 transition duration-300">
+      <i data-lucide="phone-call" class="w-7 h-7"></i>
+    </a>
+  </div>
+
+  <!-- Leaflet JS for Maps -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <!-- App JS -->
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+/* ==========================================================================
+   N.K Transports - Custom Stylesheet
+   Theme: Deep Obsidian Black & Electric Emerald Green
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap');
+
+:root {
+  --bg-primary: #080c0a;
+  --bg-secondary: #0f1612;
+  --bg-card: rgba(18, 26, 22, 0.75);
+  --bg-card-hover: rgba(24, 36, 30, 0.9);
+  --border-emerald: rgba(16, 185, 129, 0.25);
+  --border-emerald-glow: rgba(0, 255, 136, 0.45);
+  --green-neon: #00ff88;
+  --green-emerald: #10b981;
+  --green-dark: #064e3b;
+  --green-glow: 0 0 25px rgba(16, 185, 129, 0.35);
+  --green-glow-strong: 0 0 35px rgba(0, 255, 136, 0.6);
+  --text-primary: #f3f4f6;
+  --text-muted: #9ca3af;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080c0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff88;
+}
+
+/* Glassmorphism Cards */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-emerald);
+  transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+  border-color: var(--border-emerald-glow);
+  box-shadow: var(--green-glow);
+}
+
+.glass-card-interactive {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(15, 22, 18, 0.85) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-interactive:hover {
+  transform: translateY(-5px);
+  border-color: #00ff88;
+  box-shadow: 0 10px 30px -10px rgba(0, 255, 136, 0.3);
+}
+
+/* Glowing Neon Elements */
+.glow-green {
+  box-shadow: var(--green-glow);
+}
+
+.glow-text {
+  text-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+}
+
+.glow-btn {
+  background: linear-gradient(135deg, #00ff88 0%, #10b981 100%);
+  color: #05140d;
+  font-weight: 700;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+  transition: all 0.3s ease;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 35px rgba(0, 255, 136, 0.8);
+  transform: translateY(-2px);
+}
+
+.glow-btn-outline {
+  border: 1.5px solid #00ff88;
+  color: #00ff88;
+  background: rgba(0, 255, 136, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glow-btn-outline:hover {
+  background: rgba(0, 255, 136, 0.15);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
+}
+
+/* Pulse Radar Ring for Live Tracking */
+@keyframes radarPing {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.radar-ring {
+  position: absolute;
+  border-radius: 9999px;
+  border: 2px solid #00ff88;
+  animation: radarPing 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.radar-beacon {
+  width: 14px;
+  height: 14px;
+  background-color: #00ff88;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #00ff88;
+  position: relative;
+}
+
+/* Leaflet Map Customization for Deep Black / Neon Green */
+#trackingMap {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: #0a0e0c;
+  z-index: 10;
+}
+
+.leaflet-container {
+  background: #090e0c !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+/* Custom Car Icon on Leaflet */
+.car-marker-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.car-marker-icon {
+  width: 44px;
+  height: 44px;
+  background: #064e3b;
+  border: 2px solid #00ff88;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ff88;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.7);
+  transition: transform 0.5s ease-out;
+}
+
+.car-marker-label {
+  position: absolute;
+  bottom: -24px;
+  white-space: nowrap;
+  background: rgba(8, 12, 10, 0.95);
+  border: 1px solid #00ff88;
+  color: #00ff88;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Leaflet dark popups */
+.leaflet-popup-content-wrapper {
+  background: #0f1612 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #10b981 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7) !important;
+}
+
+.leaflet-popup-tip {
+  background: #0f1612 !important;
+  border-top: 1px solid #10b981;
+}
+
+/* Floating WhatsApp / Phone Quick Access Pill */
+.floating-call-pill {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Custom Grid Background Pattern */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Badge Glow */
+.badge-live {
+  background: rgba(0, 255, 136, 0.15);
+  border: 1px solid rgba(0, 255, 136, 0.5);
+  color: #00ff88;
+}
+
+/* Range input styling */
+input[type="range"] {
+  accent-color: #00ff88;
+}
+
+/* Smooth car moving transition */
+.leaflet-marker-icon {
+  transition: transform 0.4s linear;
+}
